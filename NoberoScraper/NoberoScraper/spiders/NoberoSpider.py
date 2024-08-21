@@ -9,7 +9,7 @@ import scrapy
 
 class NoberoSpider(scrapy.Spider):
     name = "nobero"
-    start_urls=['https://nobero.com/pages/men']
+    start_urls=['https://nobero.com/pages/men','https://nobero.com/pages/women']
     domain_name='https://nobero.com/'
     def parse(self,response):
         category_link=[]
@@ -23,6 +23,8 @@ class NoberoSpider(scrapy.Spider):
             next_page_link = self.domain_name + next_page.strip()[1:]
             yield response.follow(next_page_link, self.parse_category,cb_kwargs={'product_category':\
                                                                                  categories[index]})
+        next_page = self.start_urls[1]
+        yield response.follow(next_page, self.parse)
             
         
             
