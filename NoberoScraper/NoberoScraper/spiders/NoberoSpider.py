@@ -105,7 +105,7 @@ class NoberoSpider(scrapy.Spider):
                     }
 
                 except:
-                    print("Yes")
+                    
                     continue
 
                     

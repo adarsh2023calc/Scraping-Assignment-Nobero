@@ -11,7 +11,7 @@ class ProductView(viewsets.ModelViewSet):
    
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
-    def get():
+    def get_products(response):
         products = list(Product.objects.values())
         return JsonResponse(products, safe=False)
 
