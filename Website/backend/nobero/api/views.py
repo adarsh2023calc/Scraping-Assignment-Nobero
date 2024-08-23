@@ -4,11 +4,16 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Product
 from django.http import JsonResponse
-from rest_framework import generics
+from rest_framework import generics,viewsets
 from .serializers import ProductSerializer
 
-class ProductView(generics.CreateAPIView):
+class ProductView(viewsets.ModelViewSet):
+   
+    serializer_class = ProductSerializer
     queryset = Product.objects.all()
-    serializer_class = ProductSerializer()
+    def get():
+        products = list(Product.objects.values())
+        return JsonResponse(products, safe=False)
+
     
 
