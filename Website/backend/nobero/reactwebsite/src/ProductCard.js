@@ -5,8 +5,8 @@ import './ProductCard.css';
 const ProductCard = ({ product }) => {
   return (
     <div className="product-card">
-      <h2>{product.title}</h2>
-      <img src={product.url} alt={product.title} />
+      
+      <a href ={product.url}><h2>{product.title}</h2> </a>
       <p>Category: {product.category}</p>
       <p>Price: ₹{product.price}</p>
       <p>MRP: ₹{product.MRP}</p>

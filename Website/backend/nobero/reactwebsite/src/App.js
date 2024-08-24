@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Product List</h1>
+      <h1>Nobero Website</h1>
       <div className="product-container">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
