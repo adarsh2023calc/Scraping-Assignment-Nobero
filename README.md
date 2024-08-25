@@ -7,6 +7,12 @@ Tools Used for this project
 * Django-Rest API
 * React- JS
 
+Steps in the project
+
+I scraped information from the valid E-Commerce platform nobero (link-'https://nobero.com/pages/men') and saved the output to the output.json file
+![image](https://github.com/user-attachments/assets/32efef6a-60e2-4fd2-b69e-6f7e726e1136)
+
+
 
 
 
