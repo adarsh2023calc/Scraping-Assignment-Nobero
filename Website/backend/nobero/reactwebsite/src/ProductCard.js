@@ -4,7 +4,7 @@ import './ProductCard.css';
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="product-card">
+    <section className="product-card">
       
       <a href ={product.url}><h2>{product.title}</h2> </a>
       <p>Category: {product.category}</p>
@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
       <p>Pattern: {product.pattern}</p>
       <p>Length: {product.length}</p>
       <p>Description: {product.description}</p>
-    </div>
+    </section>
   );
 };
 
