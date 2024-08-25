@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import ProductCard from './ProductCard';
 import 'react-bootstrap'
-import Navigation from "/Navigation/Nav"
+import Navigation from "./Navigation/Nav"
 
 
 function App() {
@@ -19,8 +19,10 @@ function App() {
     <div className="App">
       
       <h1>Nobero Website</h1>
+      
+      <div className="Na">
       <Navigation/>
-      <div className="Na"></div>
+      </div>
       <nav class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">Men</li>
         <li class="nav-item" >Women</li>
