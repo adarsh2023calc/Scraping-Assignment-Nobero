@@ -6,17 +6,35 @@
     display:inline-block;
     padding: 15px;
     width: 500px;
-    height: 500px;
+    height: 400px;
     align-items:end;
     text-align: center;
     margin: 10px;
+    overflow: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Times New Roman', Times, serif;
 
     
   
   }
-  
+  nav{
+    list-style: none;
+    display: inline-flex;
+    height:35px;
+    width: 100%;
+    background-color:blue;
+    
+  }
+  .nav-item{
+    margin: auto;
+    font-style: normal;
+    padding: 10px;
+    color: #fff;
+
+  }
+  a{
+    text-decoration: none;
+  }
   .product-card img {
     max-width: 100%;
     height: auto;

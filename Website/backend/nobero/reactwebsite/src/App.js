@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import ProductCard from './ProductCard';
+import 'react-bootstrap'
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -14,7 +15,12 @@ function App() {
 
   return (
     <div className="App">
+      
       <h1>Nobero Website</h1>
+      <nav class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">Men</li>
+        <li class="nav-item" >Women</li>
+      </nav>
       <div className="product-container">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
