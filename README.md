@@ -19,6 +19,10 @@ Steps in the project
 ->We load the JSON file on Django server with REST API runnning on it. 
 
 
+->Last and finally, we get our required website
+
+![image](https://github.com/user-attachments/assets/23195967-2f51-4301-a15d-3e42dc63bdb6)
+
 
 
 
